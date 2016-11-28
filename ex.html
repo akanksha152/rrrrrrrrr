@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery function</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+
+     <div class="container-fluid" style="background-color:#DAF7A6; color:#fff; height:80px;">
+	      <div class="navbar-header" >
+	          <div class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar1" style="/*margin-top: 30px;*/">
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span>
+		          <span class="icon-bar"></span> 
+	          </div>
+	      	<!--  <a class="navbar-brand" href="#" data-toggle="tooltip" title="Music World logo" ><img  src="img/music-png.png" alt="logo" width="80" height="60" style="float:left"></a>-->
+	      </div>
+
+	      <div class="collapse navbar-collapse" id="myNavbar1">
+	      <h1 class="pull-left" style="font-family: 'Ewert', cursive; font-size:40px; color:green; padding-bottom:0px; padding-left: 10px;"><strong>Search your favourite movie over here</strong></h1>
+		      <div class="pull-right" style="margin-top:25px; margin-right:5px;"> 
+		        <a href="#" data-toggle="tooltip" title="Google App" style="color:black;"> <i class="fa fa-th fa-2x" aria-hidden="true" style="margin-right:10px;"></i></a>
+		        <a href="#" data-toggle="tooltip" title="Notification" style="color:black;"> <i class="fa fa-bell fa-2x" aria-hidden="true" style="margin-right:10px;"></i></a>
+		        <a href="#" data-toggle="tooltip" title="Google Account" style="color:black;"> <i class="fa fa-user-circle-o fa-2x" aria-hidden="true" style="margin-right:10px;"></i></a>
+		      </div>
+	      </div> 
+
+     </div>
+
+
+	 <nav class="navbar " data-spy="affix" data-offset-top="60" style="background-color: #EBEDEF; z-index:100; margin-bottom: 0px;  ">
+	  <div class="container">
+	          <div class="navbar-header ">
+	          <h1 class="pull-left navbar-toggle" data-toggle="collapse" style="font-family: 'Ewert', cursive; font-size:15px; color:green; padding-bottom:0px; padding-left: 10px;"><strong>Search your favourite movie</strong></h1>
+	          <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar2" data-toggle="collapse" data-target="#myNavbar2" style="/*margin-top: 30px;*/">
+		          <strong>Click</strong>
+	          </button>
+	      	  
+	          </div>
+
+      <div class="collapse navbar-collapse navbar-static-top" id="myNavbar2" >
+			  <ul class="nav navbar-nav "  >
+			    <li class="active"><a href="#">Home</a></li>
+			     <li class="dropdown">
+			           <a href="#" class="dropdown-toggle" data-toggle="dropdown" ><b>  Images</b><strong class="caret"></strong></a>
+			           <ul class="dropdown-menu" style="z-index: -1">
+				            <li><a href="#">png</a></li>
+				            <li><a href="#">jpg</a></li>
+				            <li><a href="#">gif</a></li>
+				            <li class="divider">
+				            </li>
+				            <li class="dropdown-header">others</li>
+				            <li><a href="#">png</a></li>
+				            <li><a href="#">jpg</a></li>
+				            <li><a href="#">gif</a></li>
+			          </ul><!--end drop-down menu-->
+			     </li><!-- end drop-down-->
+			    <li><a href="#">Vedio</a></li>
+			    <li><a href="#">Contacts</a></li>
+			    <form class="navbar-form pull-left" >
+			          <input type="text" class="form-control pull-left" placeholder="Search..." style="width:200px;">
+			          <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+
+		        </form>
+			  </ul>
+
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a  href="#MyModal1" data-toggle="modal" id="sign"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		        <li><a  href="#MyModal2" data-toggle="modal" id="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		      </ul>
+		 </div>
+		 
+	   </div>		  
+	  </nav>
+	   
+	  <div class="well well-small hidden-lg" style="padding-top: 5px; padding-bottom: 5px;">
+		 		<a href="#" data-toggle="tooltip" title="Home" style="color:black;"> <i class="fa fa-home fa-2x" aria-hidden="true" style="margin-right:10px;"></i></a>
+		        <a href="#" data-toggle="tooltip" title="Images" style="color:black;"> <i class="fa fa-picture-o fa-2x" aria-hidden="true" style="margin-right:10px;"></i></a>
+		        <a href="#" data-toggle="tooltip" title="Vedios" style="color:black;"> <i class="fa fa-phone fa-2x" aria-hidden="true" style="margin-right:10px;"></i></a>
+		        <div class="pull-right">
+		        <a  href="#MyModal1" data-toggle="modal"><span class="glyphicon glyphicon-user pull-left" style="margin-right: 10px;"></span> </a>
+		        <a  href="#MyModal2" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> </a>
+	          </div>
+		       
+	</div>
+
+    
+	<div class="container"  style="text-align: center;">
+<label for="Name">Title:</label>
+<input type="text" id="Name">
+<button id ="btn1">Search</button>
+<div class="container">
+<ul class="orders" style="font-size: 100%; font-weight: bold; margin-top: 20px;" >
+</ul>
+</div>
+
+<button id="prev">Previous</button>
+<button id="next">Next</button>
+</div>
+
+
+
+
+
+</body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <!-- Latest compiled and minified CSS -->
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="movie.js"></script>
+<style>
+  
+    .affix {
+      top: 0;
+      width: 100%;
+     }
+
+    .affix + .container-fluid {
+      padding-top: 0px;
+      position: absolute;
+    }
+  </style>
+    
+    
+</html>
